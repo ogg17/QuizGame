@@ -1,0 +1,102 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsep8q2fm5dcb"]
+
+[ext_resource type="Theme" uid="uid://c482nabbbxqrp" path="res://resources/game_theme.tres" id="1_3hnj6"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_5b3n3"]
+[ext_resource type="Texture2D" uid="uid://cfkhhkicyg20s" path="res://icon.svg" id="2_w32ew"]
+[ext_resource type="Script" path="res://scripts/answer.gd" id="3_og5t0"]
+
+[node name="Game" type="Control" node_paths=PackedStringArray("a_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5b3n3")
+a_button = NodePath("AnswerButton")
+a_button_space = 70
+a_button_group_height = 0.65
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 2
+texture_repeat = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_w32ew")
+expand_mode = 5
+stretch_mode = 6
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 256.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 64.0
+offset_bottom = 115.0
+grow_horizontal = 2
+theme = ExtResource("1_3hnj6")
+theme_override_font_sizes/font_size = 40
+text = "Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestionTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 104.0
+offset_bottom = 149.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_3hnj6")
+theme_override_font_sizes/font_size = 35
+text = "Question 1
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="QuestionLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 8.0
+offset_top = 144.0
+offset_right = -8.0
+offset_bottom = 256.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_3hnj6")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AnswerButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -176.0
+offset_top = 320.0
+offset_right = 168.0
+offset_bottom = 384.0
+grow_horizontal = 2
+theme = ExtResource("1_3hnj6")
+theme_override_font_sizes/font_size = 25
+text = "answer"
+script = ExtResource("3_og5t0")
+
+[connection signal="pressed" from="AnswerButton" to="AnswerButton" method="_on_pressed"]

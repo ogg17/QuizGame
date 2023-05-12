@@ -1,0 +1,54 @@
+[
+  {
+	"question": "Какая страна самая большая в мире?",
+	"answers": [
+	  {"text": "Россия", "correct": true},
+	  {"text": "США", "correct": false},
+	  {"text": "Китай", "correct": false},
+	  {"text": "Канада", "correct": false},
+	  {"text": "Япония", "correct": false},
+	  {"text": "Индия", "correct": false}
+	],
+	"background": "backgrounds/russia.jpg"
+  },
+  {
+	"question": "Какой металл самый тяжелый?",
+	"answers": [
+	  {"text": "Золото", "correct": false},
+	  {"text": "Платина", "correct": false},
+	  {"text": "Олово", "correct": false},
+	  {"text": "Осмий", "correct": true}
+	],
+	"background": "backgrounds/osmium.jpg"
+  },
+  {
+	"question": "Какой язык программирования является объектно-ориентированным?",
+	"answers": [
+	  {"text": "C", "correct": false},
+	  {"text": "C++", "correct": true},
+	  {"text": "F#", "correct": false},
+	  {"text": "C#", "correct": true},
+	  {"text": "LISP", "correct": false}
+	],
+	"background": "backgrounds/programming.jpg"
+  },
+  {
+	"question": "Какой язык программирования не является объектно-ориентированным?",
+	"answers": [
+	  {"text": "C", "correct": true},
+	  {"text": "C++", "correct": false},
+	  {"text": "F#", "correct": true},
+	  {"text": "C#", "correct": false},
+	  {"text": "LISP", "correct": true}
+	],
+	"background": "backgrounds/programming.jpg"
+  },
+  {
+	"question": "Понравилась ли вам игра?",
+	"answers": [
+		{"text": "Да", "correct": true},
+		{"text": "Нет", "correct": false}
+	],
+	"background": "backgrounds/null.jpg"
+  }
+]

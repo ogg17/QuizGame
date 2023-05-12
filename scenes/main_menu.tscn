@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://nwxogrmd8snj"]
+
+[ext_resource type="Theme" uid="uid://c482nabbbxqrp" path="res://resources/game_theme.tres" id="1_6a4fe"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_xg1n5"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xg1n5")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 64.0
+offset_bottom = 128.0
+grow_horizontal = 2
+theme = ExtResource("1_6a4fe")
+theme_override_font_sizes/font_size = 40
+text = "Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewGameButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = 12.0
+offset_right = 176.0
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_6a4fe")
+theme_override_font_sizes/font_size = 40
+text = "New Game"

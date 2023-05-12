@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddv0erdepqb8j"]
+
+[ext_resource type="Theme" uid="uid://c482nabbbxqrp" path="res://resources/game_theme.tres" id="1_3yv4l"]
+[ext_resource type="Script" path="res://scripts/restart.gd" id="1_a7fku"]
+
+[node name="Restart" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a7fku")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 64.0
+offset_bottom = 128.0
+grow_horizontal = 2
+theme = ExtResource("1_3yv4l")
+theme_override_font_sizes/font_size = 40
+text = "End"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResultLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 128.0
+offset_bottom = 192.0
+grow_horizontal = 2
+theme = ExtResource("1_3yv4l")
+theme_override_font_sizes/font_size = 30
+text = "Correct answers: 10/10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -144.0
+offset_top = -200.0
+offset_right = 144.0
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_3yv4l")
+theme_override_font_sizes/font_size = 30
+text = "Restart"

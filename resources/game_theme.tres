@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c482nabbbxqrp"]
+
+[ext_resource type="FontFile" uid="uid://dpx763jb87kb3" path="res://resources/Fonts/Matias Webfont.ttf" id="1_ktcxn"]
+
+[resource]
+default_font = ExtResource("1_ktcxn")
+default_font_size = 20
